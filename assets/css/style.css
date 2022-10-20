@@ -14,6 +14,13 @@ a{
 html{
 
 }
+
+.none{
+    display: none;
+}
+.blockk{
+    display: block;
+}
 .row{
     margin-left: -8px;
     margin-right: -8px;
@@ -73,6 +80,10 @@ html{
 .mw{
     max-width: 1200px;
     
+}
+
+.bg-red{
+    background-color: red;
 }
 .he-600{
     height: 600px;
@@ -271,6 +282,13 @@ html{
 
 
 /* TIME TABLE */
+
+.content-active{
+    height: 70%;
+    width: 100%;
+    box-shadow: 0px 0px 136px 0px rgb(0 0 0 / 17%);
+    padding: 20px 40px 25px;
+}
 .time{
 
 }
@@ -291,10 +309,12 @@ html{
 }
 .time-table .list-day{
     height: 10%;
-    width: 90%;
+    width: 100%;
     display: flex;
     margin-bottom: 30px;
     box-shadow: 0px 0px 136px 0px rgb(0 0 0 / 20%);
+    padding: 0;
+    text-align: center;
 }
 .time-table .list-day .flex-col{
     width: 25%;
@@ -302,7 +322,10 @@ html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
+
+
 .time-table .list-day .flex-col:hover{
     background-color: #fc097c;
     cursor: pointer;
@@ -312,13 +335,22 @@ html{
     font-weight: 600;
 }
 
+.active{}
 
 .time-table .table-active{
-    height: 65%;
-    width: 90%;
+    width: 100%;
+    height: 100%;
     box-shadow: 0px 0px 136px 0px rgb(0 0 0 / 17%);
     padding: 20px 40px 25px;
 }
+.tab-table-active {
+    display: none;
+  }
+  
+.tab-table-active.active {
+    display: block;
+}
+
 .time-table .table-active .class-list{
     height: 100%;
     width: 100%;
@@ -330,7 +362,7 @@ html{
 .time-table .table-active .class-list li{
     height: 33%;
     width: 100%;
-    padding: 20px 10px 20px;
+    padding: 10px 10px 20px;
     display: flex;
 }
 .table-active .class-list .info-right{
@@ -746,3 +778,11 @@ html{
     width: 60%;
     height: 100%;
 }
+
+
+
+
+
+
+
+
